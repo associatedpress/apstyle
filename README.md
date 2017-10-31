@@ -14,7 +14,7 @@ Installing from github:
 # Usage
 
 Load package:
-`library(aputils)`
+`library(apstyle)`
 
 Rmarkdown template can be accessed by [[screenshot]]
 

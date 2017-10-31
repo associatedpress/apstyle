@@ -1,0 +1,13 @@
+Package: apstyle
+Type: Package
+Title: Associated Press Style Package
+Version: 0.1.0
+Author: Larry Fenn
+Maintainer: Larry Fenn <lfenn@ap.org>
+Description: This package contains utility libraries for producing AP content
+    It currently includes an Rmd template and a ggplot theme.
+License: OSI
+Encoding: UTF-8
+LazyData: true
+Imports: aptheme
+Remotes: associatedpress/aptheme

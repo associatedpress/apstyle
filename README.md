@@ -9,7 +9,7 @@ This is a utility package for R as it is used in the Associated Press.
 # Installation
 
 Installing from github:
-`devtools::install_github("associatedpress/")`
+`devtools::install_github("associatedpress/apstyle")`
 
 # Usage
 

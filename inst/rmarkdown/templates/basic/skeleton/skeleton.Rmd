@@ -10,7 +10,7 @@ output:
     df_print: paged
 ---
 <!-- Timestamp: leave this in to automatically track when a file is rendered -->
-*Rendered at `r format(Sys.time(), '%I:%M %p, %b %d, %Y')`*
+*Rendered at `r format(Sys.time(), '%I:%M %p, %b. %d, %Y')`*
 
 <!-- Contact info: leave author/reporter/editor contact info here -->
 *Larry Fenn (<lfenn@ap.org>), Chris Rugaber (<crugaber@ap.org>)*

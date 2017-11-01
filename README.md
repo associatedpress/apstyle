@@ -16,6 +16,6 @@ Installing from github:
 Load package:
 `library(apstyle)`
 
-Rmarkdown template can be accessed by [[screenshot]]
+Rmarkdown template can be accessed by navigating to "File > New File > R Markdown..." and selecting "From Template"
 
 AP ggplot theme can be applied to a ggplot object via `+ theme_ap()`

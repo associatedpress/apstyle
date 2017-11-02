@@ -15,12 +15,15 @@ output:
 <!-- Contact info: leave author/reporter/editor contact info here -->
 *Larry Fenn (<lfenn@ap.org>), Chris Rugaber (<crugaber@ap.org>)*
 
-```{r initialize, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, 
-                      message = FALSE, 
-                      warning = FALSE
+```{r knitopts, include = FALSE}
+knitr::opts_chunk$set(
   root.dir = "~/proj_root_dir", # Change this to the project root
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE
   )
+```
+```{r initialize}
 # Load files, environment variables, libraries, etc. here
 library(tidyverse)
 library(apstyle)

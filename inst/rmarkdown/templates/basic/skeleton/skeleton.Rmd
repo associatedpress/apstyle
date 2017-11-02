@@ -19,6 +19,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE, 
                       message = FALSE, 
                       warning = FALSE
+  root.dir = "~/proj_root_dir", # Change this to the project root
   )
 # Load files, environment variables, libraries, etc. here
 library(tidyverse)

@@ -9,7 +9,6 @@ output:
       smooth_scroll: false
     df_print: paged
 knit: (function(i, encoding) {apstyle::render(i, encoding)})
-
 ---
 <!-- Timestamp: leave this in to automatically track when a file is rendered -->
 *Rendered at `r format(Sys.time(), '%I:%M %p, %b. %d, %Y')`*

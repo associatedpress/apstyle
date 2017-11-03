@@ -8,7 +8,8 @@ output:
       collapsed: false
       smooth_scroll: false
     df_print: paged
-knit: apstyle::render(input, encoding, "path/to/project")
+knit: (function(i, encoding) {apstyle::render(i, encoding, "Path/to/project")})
+
 ---
 <!-- Timestamp: leave this in to automatically track when a file is rendered -->
 *Rendered at `r format(Sys.time(), '%I:%M %p, %b. %d, %Y')`*

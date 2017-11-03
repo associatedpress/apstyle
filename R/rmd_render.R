@@ -9,7 +9,7 @@
 #' @export
 render <- function(input, encoding, project_dir) {
   rmarkdown::render(
-    input,
+    input = input,
     encoding = encoding,
     knit_root_dir = project_dir,
     output_dir = file.path(project_dir, "data/rmd_output"))

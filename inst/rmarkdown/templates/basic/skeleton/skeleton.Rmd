@@ -16,8 +16,8 @@ output:
 *Larry Fenn (<lfenn@ap.org>), Chris Rugaber (<crugaber@ap.org>)*
 
 ```{r knitopts, include = FALSE}
+knitr::opts_knit$set(root.dir = "~/proj_root_dir") # Set project root here
 knitr::opts_chunk$set(
-  root.dir = "~/proj_root_dir", # Change this to the project root
   echo = FALSE, 
   message = FALSE, 
   warning = FALSE

@@ -5,12 +5,14 @@
 #' the source .Rmd file from the output .html file
 #' @import rmarkdown
 #' @import aptheme
+#' @import rprojroot
 
 #' @export
-render <- function(input, encoding, project_dir) {
+render <- function(input, encoding) {
+  project_dir <- rprojroot::find_rstudio_root_file()
   rmarkdown::render(
     input = input,
     encoding = encoding,
     knit_root_dir = project_dir,
-    output_dir = file.path(project_dir, "data/rmd_output"))
+    output_dir = file.path(project_dir, "data/reports"))
 }

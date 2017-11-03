@@ -3,3 +3,4 @@
 export(render)
 import(aptheme)
 import(rmarkdown)
+import(rprojroot)

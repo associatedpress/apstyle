@@ -4,7 +4,7 @@
 \alias{render}
 \title{Rmarkdown render replacement}
 \usage{
-render(input, encoding, project_dir)
+render(input, encoding)
 }
 \description{
 The default Rmarkdown render in Rstudio doesn't play nice with our datakit

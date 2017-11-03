@@ -8,6 +8,7 @@ output:
       collapsed: false
       smooth_scroll: false
     df_print: paged
+knit: apstyle::render(input, encoding, "path/to/project")
 ---
 <!-- Timestamp: leave this in to automatically track when a file is rendered -->
 *Rendered at `r format(Sys.time(), '%I:%M %p, %b. %d, %Y')`*
@@ -16,7 +17,6 @@ output:
 *Larry Fenn (<lfenn@ap.org>), Chris Rugaber (<crugaber@ap.org>)*
 
 ```{r knitopts, include = FALSE}
-knitr::opts_knit$set(root.dir = "~/proj_root_dir") # Set project root here
 knitr::opts_chunk$set(
   echo = FALSE, 
   message = FALSE, 

@@ -24,6 +24,12 @@ knitr::opts_chunk$set(
   )
 ```
 ```{r initialize}
+setwd(rprojroot::find_rstudio_root_file())
+# This is a hack to support properly loading/rendering parts of the file in
+# RStudio before knitting to HTML.
+# Note that the working directory is 'reset' to the directory containing the
+# Rmd file in every chunk.
+
 # Load files, environment variables, libraries, etc. here
 library(tidyverse)
 library(apstyle)

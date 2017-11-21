@@ -9,6 +9,6 @@ Description: This package contains utility libraries for producing AP content
 License: OSI
 Encoding: UTF-8
 LazyData: true
-Depends: aptheme
+Depends: aptheme, rmarkdown
 Remotes: associatedpress/aptheme
 RoxygenNote: 6.0.1

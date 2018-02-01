@@ -14,5 +14,5 @@ render <- function(input, encoding) {
     input = input,
     encoding = encoding,
     knit_root_dir = project_dir,
-    output_dir = file.path(project_dir, "data/reports"))
+    output_dir = file.path(project_dir, "output"))
 }

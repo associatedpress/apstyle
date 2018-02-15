@@ -16,20 +16,18 @@ knit: (function(i, encoding) {apstyle::render(i, encoding)})
 <!-- Contact info: leave author/reporter/editor contact info here -->
 *Larry Fenn (<lfenn@ap.org>), Chris Rugaber (<crugaber@ap.org>)*
 
-```{r knitopts, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   echo = FALSE, 
   message = FALSE, 
   warning = FALSE
   )
+
+knitr::opts_knit$set(
+  root.dir = rprojroot::find_rstudio_root_file()
+  )
 ```
 ```{r initialize}
-setwd(rprojroot::find_rstudio_root_file())
-# This is a hack to support properly loading/rendering parts of the file in
-# RStudio before knitting to HTML.
-# Note that the working directory is 'reset' to the directory containing the
-# Rmd file in every chunk.
-
 # Load files, environment variables, libraries, etc. here
 library(tidyverse)
 library(apstyle)

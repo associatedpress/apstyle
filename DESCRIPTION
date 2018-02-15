@@ -1,7 +1,7 @@
 Package: apstyle
 Type: Package
 Title: Associated Press Style Package
-Version: 0.1.1
+Version: 0.1.2
 Author: Larry Fenn
 Maintainer: Larry Fenn <lfenn@ap.org>
 Description: This package contains utility libraries for producing AP content

@@ -1,12 +1,10 @@
 ---
 title: "Untitled"
-date: "10/31/2017"
+date: "MM/DD/YYYY"
 output:
   html_document:
     toc: true
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
+    toc_float: true
     df_print: paged
 knit: (function(i, encoding) {apstyle::render(i, encoding)})
 ---
@@ -14,12 +12,12 @@ knit: (function(i, encoding) {apstyle::render(i, encoding)})
 *Rendered at `r format(Sys.time(), '%I:%M %p, %b. %d, %Y')`*
 
 <!-- Contact info: leave author/reporter/editor contact info here -->
-*Larry Fenn (<lfenn@ap.org>), Chris Rugaber (<crugaber@ap.org>)*
+*Firstname Lastname (<email@domain.com>)*
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
-  echo = FALSE, 
-  message = FALSE, 
+  echo = FALSE,
+  message = FALSE,
   warning = FALSE
   )
 
@@ -31,113 +29,11 @@ knitr::opts_knit$set(
 # Load files, environment variables, libraries, etc. here
 library(tidyverse)
 library(apstyle)
-
-car_data <- mtcars
-avg_mpg <- round(mean(car_data$mpg), 0)
 ```
 
 ## Overview
 
 <!-- This section is for presenting the key takeaways and wire-ready content -->
-
-**Data**
-
-- Data source notes here
-
-- Identify date range, scope, source
-
-**Key findings**
-
-- Average mileage is now `r avg_mpg` mpg
-
-- Ten percent of X is now Y
-
-- It looks like Z is unevenly distributed
-
-- Ames, IA is a strong outlier
-
-**Wire-ready copy**
-
-- *Isolation increased by an average of 24% annually from 2006 to 2016.*
-
-- *The typical first-time home buyer now has a household annual income of at least $123,000*
-
-**Visuals**
-
-```{r visuals}
-# Put especially compelling data viz here
-# ex.
-car_data %>%
-  ggplot(aes(x = disp, 
-             y = mpg, 
-             color = as.factor(cyl))) +
-  geom_point() + 
-  theme_ap() +
-  labs(title = "Gas guzzlers",
-       subtitle = "Larger engines are less efficient",
-       x = "Engine displacement (cubic inches)",
-       y = "Efficiency (miles per gallon)"
-  )
-```
-
-## Analysis
-
-<!-- This section is for more detailed exposition of specific points -->
-
-### 1: Is overfishing raising the calcium level?
-
-No, because of reasons. Here's a graph:
-
-```{r q1}
-# Analysis/presentation code here
-ggplot(anscombe, aes(x = x1, 
-                     y = y1)) +
-  geom_point() + 
-  geom_vline(xintercept = 8.5, color = '#C83728') +
-  theme_ap() +
-  labs(title = "Fish and calcium",
-       subtitle = "More fish means more calcium",
-       x = "Fish (1,000 lbs)",
-       y = "Calcium (kg)"
-  )
-```
-
-### 2: How hard is it to get a home?
-```{r q2}
-# Analysis/presentation code here
-iris %>%
-  ggplot(aes(x = Species, 
-             y = Sepal.Length, 
-             group = Species, 
-             color = Species)) +
-  geom_boxplot(width = .25) +
-  geom_jitter(width = .05) + 
-  theme_ap() +
-  labs(title = "Other stuff",
-       subtitle = "These things are different",
-       x = "Category (type)",
-       y = "Length (inches)"
-  )
-```
-
-## Questions
-
-<!-- This section is for tracking open-ended questions for follow-up -->
-
-### 1: How do we handle ABC?
-
-### 2: Are we okay with XYZ?
-
-## Data
-
-<!-- This section is for providing the raw data; omit this as desired -->
-
-```{r datatable}
-# Include the data here
-# Optionally, use the htmlwidgets and DT libraries 
-# to enable sorting/filtering of complex data sets
-mtcars
-```
 
 ## References
 
